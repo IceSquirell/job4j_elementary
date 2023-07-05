@@ -9,8 +9,8 @@ public class MathCalculator {
     }
 
     public static double differenceAndDivision(double first, double second) {
-        return sum(first, second)
-                - division(first, second);
+        return difference(first, second)
+                + division(first, second);
     }
 
     public static double sumAll(double first, double second) {
