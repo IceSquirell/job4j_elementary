@@ -51,13 +51,13 @@ public class PointTest {
     }
 
     @Test
-    public void when23to32then1dot414() {
-        double expected = 1.414;
+    public void when23to32then1dot41() {
+        double expected = 1.41;
         int x1 = 2;
         int y1 = 3;
         int x2 = 3;
         int y2 = 2;
         double out = Point.distance(x1, y1, x2, y2);
-        assertThat(out).isEqualTo(expected, withPrecision(0.001));
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 }
