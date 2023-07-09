@@ -8,10 +8,10 @@ public class Liken {
         boolean result = first > second;
         System.out.println(result);
 
-        boolean result1 = first < second;
-        System.out.println(result1);
+        result = first < second;
+        System.out.println(result);
 
-        boolean result2 = first == second;
-        System.out.println(result2);
+        result = first == second;
+        System.out.println(result);
     }
 }
