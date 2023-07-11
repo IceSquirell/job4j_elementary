@@ -50,4 +50,13 @@ public class SqAreaTest {
         double out = SqArea.square(p, k);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    public void whenP9K5Square2dot81() {
+        double expected = 2.81;
+        int p = 9;
+        int k = 5;
+        double out = SqArea.square(p, k);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
 }
