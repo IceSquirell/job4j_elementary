@@ -1,6 +1,7 @@
 package ru.job4j.loop;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class CounterTest {
@@ -12,7 +13,8 @@ class CounterTest {
         int expected = 30;
         assertThat(result).isEqualTo(expected);
     }
-@Test
+
+    @Test
     void whenSumEvenNumbersFromZeroToTwentyThenOneHundredAndTen() {
         int start = 0;
         int finish = 20;
