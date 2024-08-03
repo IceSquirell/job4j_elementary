@@ -4,7 +4,7 @@ public class SwitchArray {
     public static int[] swap(int[] array, int source, int destination) {
         int temp = array[destination];
         array[destination] = array[source];
-        array[source] = array[destination];
+        array[source] = temp;
         return array;
     }
 
@@ -18,8 +18,8 @@ public class SwitchArray {
     public static void main(String[] args) {
         int[] numbers = new int[]{1, 2, 3, 4, 5, 6};
         int[] result = swapBorder(numbers);
-        for (int index = 0; index < result.length; index++) {
-            System.out.println(result[index]);
+        for (int i : result) {
+            System.out.println(i);
         }
     }
 }
