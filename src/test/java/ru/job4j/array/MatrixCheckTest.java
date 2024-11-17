@@ -40,6 +40,7 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoVertical(input, column);
         assertThat(result).isTrue();
     }
+
     @Test
     public void whenHasNotMonoVertical() {
         char[][] input = {
