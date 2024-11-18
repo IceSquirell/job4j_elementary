@@ -52,6 +52,7 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoVertical(input, column);
         assertThat(result).isFalse();
     }
+
     @Test
     public void whenDiagonalFullX() {
         char[][] input = {
