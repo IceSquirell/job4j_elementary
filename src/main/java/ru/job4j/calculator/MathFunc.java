@@ -17,4 +17,3 @@ public class MathFunc {
         System.out.println(result3);
     }
 }
-
