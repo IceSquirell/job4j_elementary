@@ -9,55 +9,45 @@ public class PointTest {
     @Test
     public void when00to20then2() {
         double expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point x = new Point(0, 0);
+        Point y = new Point(2, 0);
+        double out = x.distance(y);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     public void when20to02then2dot82() {
         double expected = 2.82;
-        int x1 = 2;
-        int y1 = 0;
-        int x2 = 0;
-        int y2 = 2;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point x = new Point(2, 0);
+        Point y = new Point(0, 2);
+        double out = x.distance(y);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     public void when22to02then2() {
         double expected = 2;
-        int x1 = 2;
-        int y1 = 2;
-        int x2 = 0;
-        int y2 = 2;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point x = new Point(2, 0);
+        Point y = new Point(2, 2);
+        double out = x.distance(y);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     public void when127to22then11dot18() {
         double expected = 11.18;
-        int x1 = 12;
-        int y1 = 7;
-        int x2 = 2;
-        int y2 = 2;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point x = new Point(12, 7);
+        Point y = new Point(2, 2);
+        double out = x.distance(y);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     public void when23to32then1dot41() {
         double expected = 1.41;
-        int x1 = 2;
-        int y1 = 3;
-        int x2 = 3;
-        int y2 = 2;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point x = new Point(2, 3);
+        Point y = new Point(3, 2);
+        double out = x.distance(y);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 }
