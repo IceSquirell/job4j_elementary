@@ -50,4 +50,22 @@ public class PointTest {
         double out = x.distance(y);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    public void when123to469then7dot81() {
+        double expected = 7.81;
+        Point x = new Point(1, 2, 3);
+        Point y = new Point(4, 6, 9);
+        double out = x.distance3d(y);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    public void whenMinus1minus2minus3to234then9dot11() {
+        double expected = 9.11;
+        Point x = new Point(-1, -2, -3);
+        Point y = new Point(2, 3, 4);
+        double out = x.distance3d(y);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
 }
